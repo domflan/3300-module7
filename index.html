@@ -112,6 +112,43 @@
         <section id="analysis">
             <h2>3. Analysis</h2>
 
+            <h3>3.1 Video Game Ratings and Sales</h3>
+            <p>
+                I wanted to find out whether games with higher reviews sell more and navigate the relationship
+                between the different types of sales and review scores. I started by calculating correlation coefficients
+                to explore the relationship between variables. There was a correlation coefficient of .954 between the
+                total sales and North American sales. This is evidence of an extremely strong correlation between these
+                two variables. North American sales make up 48.7% of the total sales, which is a significant reason for
+                this strong correlation. However, the correlation between sales and review scores was very weak.
+            </p>
+            <p>
+                The correlation coefficient between total sales and meta score was .248, and it was .102 between total sales
+                and user score. While there was a moderate correlation between user score and meta score at .524, it is
+                nowhere near as strong as it was between the two sales variables.
+            </p>
+            <h3>3.2 Video Game Publishers</h3>
+            <p>
+                To find out which video game publishers have the highest sales, I created a summary data frame,
+                publisher_df, which was grouped by the publisher. In this data frame, I included the ratings’ average, the
+                sales’ sum, and the number of games each publisher has released.
+            </p>
+            <p>
+                The coefficient of correlation between the total sales and the number of games a publisher had released
+                was .715, which demonstrates a strong correlation between the number of games released and the total
+                sales of a publisher.
+            </p>
+            <h3>3.3 Release Date</h3>
+            <p>
+                To determine how sales, number of games released, and review scores have changed, I created a data
+                frame called by_month, which grouped the games by month and calculated the average review scores,
+                the sum of sales, and the number of games.
+            </p>
+            <p>
+                The correlation coefficient between the release date and the number of games released is .533, which is
+                evidence of some correlation, but it is not especially strong. Figure 5 reveals a large peak in the number
+                of games released around 2010 before decreasing again. The sales of games did not see this same spike.
+            </p>
+            
         </section>
         
         <section id="conclusion">
